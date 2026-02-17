@@ -82,8 +82,8 @@ export default function NamingOpportunities() {
 
   const filteredItems =
     activeFloor === 0
-      ? namingData.filter((item) => item.floor === 0)
-      : namingData.filter((item) => item.floor === activeFloor);
+      ? namingData.filter((item) => item.category === "building")
+      : namingData.filter((item) => item.floor === activeFloor && item.category !== "building");
 
   const availableCount = namingData.filter((item) => item.status === "available").length;
 
