@@ -94,7 +94,7 @@ export default function NamingOpportunities() {
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
             Naming Opportunities
           </h2>
-          <div className="w-16 h-1 bg-[#D4A843] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto mb-4">
             Leave a lasting legacy by naming a space in the new Science Facility. Every investment advances faith-based science education for generations to come.
           </p>
@@ -133,11 +133,11 @@ export default function NamingOpportunities() {
                 onClick={() => setSelectedItem(item)}
                 className={`text-left p-5 rounded-sm border transition-all duration-200 hover:shadow-md ${
                   item.status === "available"
-                    ? "bg-white border-gray-200 hover:border-[#D4A843]"
+                    ? "bg-white border-gray-200 hover:border-[#FEC324]"
                     : item.status === "reserved"
                     ? "bg-gray-50 border-gray-200 opacity-75"
                     : "bg-gray-50 border-gray-200 opacity-60"
-                } ${selectedItem?.name === item.name ? "ring-2 ring-[#D4A843]" : ""}`}
+                } ${selectedItem?.name === item.name ? "ring-2 ring-[#FEC324]" : ""}`}
               >
                 <div className="flex justify-between items-start mb-3">
                   <span
@@ -152,7 +152,7 @@ export default function NamingOpportunities() {
                   </span>
                 </div>
                 <h3 className="font-[var(--font-heading)] text-[#3D1A78] font-bold text-base mb-1">{item.name}</h3>
-                <p className="font-[var(--font-heading)] text-[#D4A843] font-bold text-lg">{item.price}</p>
+                <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-lg">{item.price}</p>
                 {item.donor && (
                   <p className="font-[var(--font-body)] text-gray-500 text-sm mt-1 italic">Named by {item.donor}</p>
                 )}
@@ -167,7 +167,7 @@ export default function NamingOpportunities() {
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h3 className="font-[var(--font-heading)] text-[#3D1A78] font-bold text-xl mb-1">{selectedItem.name}</h3>
-                <p className="font-[var(--font-heading)] text-[#D4A843] font-bold text-2xl">{selectedItem.price}</p>
+                <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-2xl">{selectedItem.price}</p>
               </div>
               <button
                 onClick={() => setSelectedItem(null)}
@@ -192,13 +192,13 @@ export default function NamingOpportunities() {
 
         {/* Challenge grant callout */}
         <div className="mt-16 bg-[#3D1A78] rounded-sm p-8 md:p-12 text-center">
-          <h3 className="font-[var(--font-heading)] text-[#D4A843] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
+          <h3 className="font-[var(--font-heading)] text-[#FEC324] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
             $4 Million Challenge Grant
           </h3>
           <p className="font-[var(--font-body)] text-white/90 text-lg max-w-2xl mx-auto mb-2">
             A generous anonymous donor has offered a $1 million gift plus a $4 million challenge grant. UMHB must raise an additional $5 million in new gifts by the end of 2026 to unlock the full challenge.
           </p>
-          <p className="font-[var(--font-heading)] text-[#D4A843] font-bold text-lg">
+          <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-lg">
             Your gift today counts toward the challenge.
           </p>
         </div>

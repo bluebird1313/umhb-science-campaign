@@ -61,7 +61,7 @@ export default function FloorPlans() {
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
             Floor Plans
           </h2>
-          <div className="w-16 h-1 bg-[#D4A843] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto">
             56,000 square feet across three floors, thoughtfully designed for teaching, research, and collaboration.
           </p>
@@ -142,7 +142,7 @@ export default function FloorPlans() {
                   <svg
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-5 h-5 text-[#D4A843] flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#FEC324] flex-shrink-0 mt-0.5"
                   >
                     <path
                       fillRule="evenodd"

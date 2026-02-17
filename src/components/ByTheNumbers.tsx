@@ -50,7 +50,7 @@ function AnimatedStat({ end, suffix = "", prefix = "", label, duration = 2000 }:
 
   return (
     <div ref={ref} className="text-center">
-      <div className="counter-number font-[var(--font-heading)] text-5xl md:text-6xl lg:text-7xl font-bold text-[#D4A843] mb-3">
+      <div className="counter-number font-[var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#FEC324] mb-3">
         {prefix}
         {count.toLocaleString()}
         {suffix}
@@ -78,7 +78,7 @@ export default function ByTheNumbers() {
           From around 1,000 students in the 1920&rsquo;s to almost 3,300 today, UMHB&rsquo;s growth demands a science facility worthy of its mission.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 lg:gap-10">
           <AnimatedStat end={3300} label="Students" prefix="~" />
           <AnimatedStat end={90} suffix="+" label="Science Courses" />
           <AnimatedStat end={56000} label="Square Feet" suffix="" />

@@ -97,7 +97,7 @@ export default function Facility() {
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
             The Facility
           </h2>
-          <div className="w-16 h-1 bg-[#D4A843] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto">
             Three stories of modern labs, collaborative spaces, and faculty offices — designed for the next century of scientific discovery.
           </p>
@@ -136,7 +136,7 @@ export default function Facility() {
               key={i}
               className="bg-white p-8 rounded-sm shadow-sm hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#3D1A78]"
             >
-              <div className="text-[#D4A843] mb-4">{feature.icon}</div>
+              <div className="text-[#FEC324] mb-4">{feature.icon}</div>
               <h3 className="font-[var(--font-heading)] text-[#3D1A78] text-lg font-bold tracking-wide uppercase mb-3">
                 {feature.title}
               </h3>

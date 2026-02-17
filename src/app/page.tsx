@@ -26,7 +26,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p className="font-[var(--font-heading)] text-white/90 text-sm tracking-[0.2em] uppercase font-bold">
-              UMHB <span className="text-[#D4A843]">|</span> Advancement
+              UMHB <span className="text-[#FEC324]">|</span> Advancement
             </p>
             <p className="font-[var(--font-body)] text-white/50 text-xs mt-1">
               A New Era of Science
@@ -40,7 +40,7 @@ export default function Home() {
               href="https://www.umhb.edu"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-[var(--font-body)] text-[#D4A843]/70 text-xs hover:text-[#D4A843] transition-colors"
+              className="font-[var(--font-body)] text-[#FEC324]/70 text-xs hover:text-[#FEC324] transition-colors"
             >
               umhb.edu
             </a>

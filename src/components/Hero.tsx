@@ -55,7 +55,7 @@ export default function Hero() {
         <h1 className="font-[var(--font-heading)] text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-[0.15em] uppercase leading-tight mb-6">
           A New Era
           <br />
-          <span className="text-[#D4A843]">of Science</span>
+          <span className="text-[#FEC324]">of Science</span>
         </h1>
 
         {/* Subtitle */}
@@ -64,19 +64,19 @@ export default function Hero() {
         </p>
 
         {/* Gold accent line */}
-        <div className="w-24 h-1 bg-[#D4A843] mx-auto mb-10" />
+        <div className="w-24 h-1 bg-[#FEC324] mx-auto mb-10" />
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#vision"
-            className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#3D1A78] font-[var(--font-heading)] font-semibold text-lg tracking-wide rounded-sm hover:bg-[#D4A843] hover:text-white transition-all duration-300"
+            className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#3D1A78] font-[var(--font-heading)] font-semibold text-lg tracking-wide rounded-sm hover:bg-[#FEC324] hover:text-white transition-all duration-300"
           >
             Explore the Vision
           </a>
           <a
             href="#naming"
-            className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#D4A843] text-[#D4A843] font-[var(--font-heading)] font-semibold text-lg tracking-wide rounded-sm hover:bg-[#D4A843] hover:text-white transition-all duration-300"
+            className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#FEC324] text-[#FEC324] font-[var(--font-heading)] font-semibold text-lg tracking-wide rounded-sm hover:bg-[#FEC324] hover:text-white transition-all duration-300"
           >
             Naming Opportunities
           </a>
