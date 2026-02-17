@@ -2,8 +2,7 @@ import Hero from "@/components/Hero";
 import Vision from "@/components/Vision";
 import ByTheNumbers from "@/components/ByTheNumbers";
 import Facility from "@/components/Facility";
-import FloorPlans from "@/components/FloorPlans";
-import NamingOpportunities from "@/components/NamingOpportunities";
+import InteractiveNamingPlan from "@/components/InteractiveNamingPlan";
 import InvestingInStudents from "@/components/InvestingInStudents";
 import Contact from "@/components/Contact";
 import StickyCTA from "@/components/StickyCTA";
@@ -15,8 +14,7 @@ export default function Home() {
       <Vision />
       <ByTheNumbers />
       <Facility />
-      <FloorPlans />
-      <NamingOpportunities />
+      <InteractiveNamingPlan />
       <InvestingInStudents />
       <Contact />
       <StickyCTA />
