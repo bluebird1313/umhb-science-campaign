@@ -50,7 +50,7 @@ function AnimatedStat({ end, suffix = "", prefix = "", label, duration = 2000 }:
 
   return (
     <div ref={ref} className="text-center">
-      <div className="counter-number font-[var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#FEC324] mb-3">
+      <div className="counter-number font-[var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFC425] mb-3">
         {prefix}
         {count.toLocaleString()}
         {suffix}
@@ -64,7 +64,7 @@ function AnimatedStat({ end, suffix = "", prefix = "", label, duration = 2000 }:
 
 export default function ByTheNumbers() {
   return (
-    <section className="relative py-24 md:py-32 bg-[#3D1A78] overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-[#4D008C] overflow-hidden">
       {/* Molecular motif watermarks */}
       <MolecularMotif className="absolute top-10 left-10 w-48 h-48 text-white/5 hidden lg:block" />
       <MolecularMotif className="absolute bottom-10 right-10 w-56 h-56 text-white/5 hidden lg:block" />

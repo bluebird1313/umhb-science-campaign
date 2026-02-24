@@ -82,14 +82,14 @@ export default function NamingOpportunities() {
     <section id="naming" className="py-24 md:py-32 bg-[#FAF8F5]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
+          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#4D008C] tracking-[0.15em] uppercase mb-4">
             Naming Opportunities
           </h2>
-          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto mb-4">
             Leave a lasting legacy by naming a space in the new Science Facility. Every investment advances faith-based science education for generations to come.
           </p>
-          <p className="font-[var(--font-heading)] text-[#3D1A78] text-lg font-semibold">
+          <p className="font-[var(--font-heading)] text-[#4D008C] text-lg font-semibold">
             {availableCount} of {namingData.length} opportunities remaining
           </p>
         </div>
@@ -105,8 +105,8 @@ export default function NamingOpportunities() {
               }}
               className={`px-5 py-2.5 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase font-semibold transition-all duration-300 rounded-sm ${
                 activeFloor === i
-                  ? "bg-[#3D1A78] text-white shadow-lg"
-                  : "bg-white text-[#3D1A78] hover:bg-gray-100 border border-gray-200"
+                  ? "bg-[#4D008C] text-white shadow-lg"
+                  : "bg-white text-[#4D008C] hover:bg-gray-100 border border-gray-200"
               }`}
             >
               {label}
@@ -131,13 +131,13 @@ export default function NamingOpportunities() {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mt-6 mb-4">
           <a
             href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase font-semibold rounded-sm hover:bg-[#2D1259] transition-colors duration-300 shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#4D008C] text-white font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase font-semibold rounded-sm hover:bg-[#3B0068] transition-colors duration-300 shadow-sm"
           >
             Inquire at advancement@umhb.edu
           </a>
           <button
             onClick={() => setShowList(!showList)}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-sm font-[var(--font-heading)] text-[#3D1A78] text-sm tracking-[0.1em] uppercase font-semibold hover:bg-gray-50 hover:border-[#FEC324] transition-all duration-300 shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-sm font-[var(--font-heading)] text-[#4D008C] text-sm tracking-[0.1em] uppercase font-semibold hover:bg-gray-50 hover:border-[#FFC425] transition-all duration-300 shadow-sm"
           >
             {showList ? "Hide" : "View"} Naming Opportunities
             <svg
@@ -163,7 +163,7 @@ export default function NamingOpportunities() {
           <div className="bg-white rounded-sm shadow-lg border border-gray-200 overflow-hidden mt-2 mb-10">
             <table className="w-full">
               <thead>
-                <tr className="bg-[#3D1A78] text-white">
+                <tr className="bg-[#4D008C] text-white">
                   <th className="text-left px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase">Space</th>
                   <th className="text-right px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase">Amount</th>
                   <th className="text-right px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase">Status</th>
@@ -183,7 +183,7 @@ export default function NamingOpportunities() {
                       </span>
                     </td>
                     <td className="px-6 py-3 text-right">
-                      <span className={`font-[var(--font-heading)] font-bold text-sm ${item.status === "named" ? "text-gray-400" : "text-[#3D1A78]"}`}>
+                      <span className={`font-[var(--font-heading)] font-bold text-sm ${item.status === "named" ? "text-gray-400" : "text-[#4D008C]"}`}>
                         {item.price}
                       </span>
                     </td>
@@ -192,7 +192,7 @@ export default function NamingOpportunities() {
                         className={`inline-block px-2.5 py-1 text-xs font-semibold rounded ${
                           item.status === "available"
                             ? "bg-green-100 text-green-800"
-                            : "bg-[#3D1A78] text-white"
+                            : "bg-[#4D008C] text-white"
                         }`}
                       >
                         {item.status === "available" ? "Available" : "Funded"}
@@ -206,14 +206,14 @@ export default function NamingOpportunities() {
         </div>
 
         {/* Challenge grant callout */}
-        <div className="mt-10 bg-[#3D1A78] rounded-sm p-8 md:p-12 text-center">
-          <h3 className="font-[var(--font-heading)] text-[#FEC324] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
+        <div className="mt-10 bg-[#4D008C] rounded-sm p-8 md:p-12 text-center">
+          <h3 className="font-[var(--font-heading)] text-[#FFC425] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
             $4 Million Challenge Grant
           </h3>
           <p className="font-[var(--font-body)] text-white/90 text-lg max-w-2xl mx-auto mb-2">
             A generous anonymous donor has offered a $1 million gift plus a $4 million challenge grant. UMHB must raise an additional $5 million in new gifts by the end of 2026 to unlock the full challenge.
           </p>
-          <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-lg">
+          <p className="font-[var(--font-heading)] text-[#FFC425] font-bold text-lg">
             Your gift today counts toward the challenge.
           </p>
         </div>

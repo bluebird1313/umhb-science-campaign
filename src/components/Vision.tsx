@@ -27,11 +27,11 @@ export default function Vision() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-10" />
-          <blockquote className="font-[var(--font-quote)] text-2xl md:text-3xl lg:text-4xl text-[#3D1A78] italic leading-relaxed mb-8">
+          <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-10" />
+          <blockquote className="font-[var(--font-quote)] text-2xl md:text-3xl lg:text-4xl text-[#4D008C] italic leading-relaxed mb-8">
             &ldquo;This new science lab facility will be a beautiful and modern addition to our campus that will open doors to countless learning opportunities for UMHB students.&rdquo;
           </blockquote>
-          <cite className="not-italic font-[var(--font-heading)] text-[#3D1A78]/70 text-base tracking-[0.2em] uppercase">
+          <cite className="not-italic font-[var(--font-heading)] text-[#4D008C]/70 text-base tracking-[0.2em] uppercase">
             &mdash; Randy O&rsquo;Rear, President
           </cite>
         </div>
@@ -43,10 +43,10 @@ export default function Vision() {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-wide uppercase mb-6">
+            <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#4D008C] tracking-wide uppercase mb-6">
               A New Era of Science
             </h2>
-            <div className="w-12 h-1 bg-[#FEC324] mb-8" />
+            <div className="w-12 h-1 bg-[#FFC425] mb-8" />
             <p className="font-[var(--font-body)] text-gray-700 text-lg leading-relaxed mb-6">
               At UMHB, we believe the pursuit of scientific knowledge is an act of stewardship&mdash;an opportunity to better understand and care for the world God has entrusted to us. Yet to prepare students for today&rsquo;s challenges, we know they need more than classrooms and labs; they need environments where collaboration, discovery, and mentorship can thrive together.
             </p>
@@ -73,8 +73,8 @@ export default function Vision() {
               />
             </div>
             {/* Purple accent block */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#3D1A78]/10 -z-10 rounded-sm" />
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#FEC324]/10 -z-10 rounded-sm" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#4D008C]/10 -z-10 rounded-sm" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#FFC425]/10 -z-10 rounded-sm" />
           </div>
         </div>
       </div>

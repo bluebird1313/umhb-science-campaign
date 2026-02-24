@@ -58,10 +58,10 @@ export default function FloorPlans() {
     <section id="floor-plans" className="py-24 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
+          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#4D008C] tracking-[0.15em] uppercase mb-4">
             Floor Plans
           </h2>
-          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto">
             56,000 square feet across three floors, thoughtfully designed for teaching, research, and collaboration.
           </p>
@@ -78,8 +78,8 @@ export default function FloorPlans() {
               }}
               className={`px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.15em] uppercase font-semibold transition-all duration-300 rounded-sm ${
                 activeFloor === i
-                  ? "bg-[#3D1A78] text-white shadow-lg"
-                  : "bg-gray-100 text-[#3D1A78] hover:bg-gray-200"
+                  ? "bg-[#4D008C] text-white shadow-lg"
+                  : "bg-gray-100 text-[#4D008C] hover:bg-gray-200"
               }`}
             >
               {floor.label}
@@ -115,7 +115,7 @@ export default function FloorPlans() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Color legend */}
           <div className="bg-gray-50 p-6 rounded-sm">
-            <h3 className="font-[var(--font-heading)] text-[#3D1A78] text-sm tracking-[0.2em] uppercase font-bold mb-4">
+            <h3 className="font-[var(--font-heading)] text-[#4D008C] text-sm tracking-[0.2em] uppercase font-bold mb-4">
               Color Legend
             </h3>
             <div className="grid grid-cols-2 gap-3">
@@ -133,7 +133,7 @@ export default function FloorPlans() {
 
           {/* Floor highlights */}
           <div className="bg-gray-50 p-6 rounded-sm">
-            <h3 className="font-[var(--font-heading)] text-[#3D1A78] text-sm tracking-[0.2em] uppercase font-bold mb-4">
+            <h3 className="font-[var(--font-heading)] text-[#4D008C] text-sm tracking-[0.2em] uppercase font-bold mb-4">
               {floors[activeFloor].label} Highlights
             </h3>
             <ul className="space-y-2">
@@ -142,7 +142,7 @@ export default function FloorPlans() {
                   <svg
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-5 h-5 text-[#FEC324] flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-[#FFC425] flex-shrink-0 mt-0.5"
                   >
                     <path
                       fillRule="evenodd"

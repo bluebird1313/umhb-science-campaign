@@ -165,15 +165,15 @@ export default function InteractiveNamingPlan() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
+          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#4D008C] tracking-[0.15em] uppercase mb-4">
             Naming Opportunities
           </h2>
-          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto mb-4">
             Leave a lasting legacy by naming a space in the new Science Facility.
             Hover over any room to explore giving levels.
           </p>
-          <p className="font-[var(--font-heading)] text-[#3D1A78] text-lg font-semibold">
+          <p className="font-[var(--font-heading)] text-[#4D008C] text-lg font-semibold">
             {availableRooms.length} naming opportunities available
           </p>
         </div>
@@ -186,8 +186,8 @@ export default function InteractiveNamingPlan() {
               onClick={() => { setActiveFloor(i); setHoveredRoom(null); setTooltip(null); }}
               className={`px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.12em] uppercase font-semibold transition-all duration-300 rounded-sm ${
                 activeFloor === i
-                  ? "bg-[#3D1A78] text-white shadow-lg"
-                  : "bg-white text-[#3D1A78] hover:bg-gray-100 border border-gray-200"
+                  ? "bg-[#4D008C] text-white shadow-lg"
+                  : "bg-white text-[#4D008C] hover:bg-gray-100 border border-gray-200"
               }`}
             >
               {f.label}
@@ -233,7 +233,7 @@ export default function InteractiveNamingPlan() {
                       ? "rgba(100,100,100,0.25)"
                       : "rgba(61, 26, 120, 0.2)"
                     : "transparent",
-                  stroke: isHovered ? "#3D1A78" : "transparent",
+                  stroke: isHovered ? "#4D008C" : "transparent",
                   strokeWidth: isHovered ? 6 : 0,
                   onMouseEnter: (e: React.MouseEvent) => handleMouseEnter(room, e),
                   onMouseMove: (e: React.MouseEvent) => handleMouseMove(room, e),
@@ -277,20 +277,20 @@ export default function InteractiveNamingPlan() {
                   transform: "translate(-50%, -100%)",
                 }}
               >
-                <div className="bg-[#3D1A78] text-white rounded-md shadow-xl px-4 py-2.5 text-center whitespace-nowrap">
+                <div className="bg-[#4D008C] text-white rounded-md shadow-xl px-4 py-2.5 text-center whitespace-nowrap">
                   <p className="font-[var(--font-heading)] font-bold text-sm leading-tight">
                     {tooltip.room.name}
                   </p>
                   {tooltip.room.status === "funded" ? (
                     <p className="text-white/60 text-xs font-semibold mt-0.5">FUNDED</p>
                   ) : (
-                    <p className="text-[#FEC324] font-bold text-base mt-0.5">
+                    <p className="text-[#FFC425] font-bold text-base mt-0.5">
                       {TIERS[tooltip.room.tier].price}
                     </p>
                   )}
                 </div>
                 <div className="flex justify-center">
-                  <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#3D1A78]" />
+                  <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#4D008C]" />
                 </div>
               </div>
             )}
@@ -302,7 +302,7 @@ export default function InteractiveNamingPlan() {
 
           {/* Tier Legend */}
           <div className="bg-white rounded-sm shadow-lg border border-gray-200 p-5 h-fit lg:sticky lg:top-8">
-            <h3 className="font-[var(--font-heading)] text-[#3D1A78] text-xs tracking-[0.2em] uppercase font-bold mb-4">
+            <h3 className="font-[var(--font-heading)] text-[#4D008C] text-xs tracking-[0.2em] uppercase font-bold mb-4">
               Giving Tiers
             </h3>
             <div className="space-y-2.5">
@@ -318,7 +318,7 @@ export default function InteractiveNamingPlan() {
                         style={{ backgroundColor: tier.swatch }}
                       />
                       <div className="flex-1">
-                        <p className="font-[var(--font-heading)] text-[#3D1A78] font-bold text-sm leading-tight">
+                        <p className="font-[var(--font-heading)] text-[#4D008C] font-bold text-sm leading-tight">
                           {tier.price}
                         </p>
                         <p className="text-gray-400 text-xs">{count} available</p>
@@ -340,7 +340,7 @@ export default function InteractiveNamingPlan() {
 
         {/* Tiles — All Naming Opportunities */}
         <div className="mb-12">
-          <h3 className="font-[var(--font-heading)] text-[#3D1A78] text-sm tracking-[0.15em] uppercase font-bold mb-5 text-center">
+          <h3 className="font-[var(--font-heading)] text-[#4D008C] text-sm tracking-[0.15em] uppercase font-bold mb-5 text-center">
             {floor.label} — All Naming Opportunities
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
@@ -352,7 +352,7 @@ export default function InteractiveNamingPlan() {
                 return (
                   <div
                     key={room.id}
-                    className="bg-white rounded-sm border border-gray-200 px-3 py-2.5 flex items-start gap-2.5 hover:border-[#FEC324] hover:shadow-sm transition-all duration-200 cursor-default"
+                    className="bg-white rounded-sm border border-gray-200 px-3 py-2.5 flex items-start gap-2.5 hover:border-[#FFC425] hover:shadow-sm transition-all duration-200 cursor-default"
                     onMouseEnter={() => setHoveredRoom(room.id)}
                     onMouseLeave={() => setHoveredRoom(null)}
                   >
@@ -361,10 +361,10 @@ export default function InteractiveNamingPlan() {
                       style={{ backgroundColor: tier.swatch }}
                     />
                     <div className="min-w-0">
-                      <p className="font-[var(--font-heading)] text-[#3D1A78] font-semibold text-xs leading-tight truncate">
+                      <p className="font-[var(--font-heading)] text-[#4D008C] font-semibold text-xs leading-tight truncate">
                         {room.name}
                       </p>
-                      <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-sm">
+                      <p className="font-[var(--font-heading)] text-[#FFC425] font-bold text-sm">
                         {tier.price}
                       </p>
                     </div>
@@ -375,8 +375,8 @@ export default function InteractiveNamingPlan() {
         </div>
 
         {/* Challenge Grant */}
-        <div className="bg-[#3D1A78] rounded-sm p-8 md:p-12 text-center">
-          <h3 className="font-[var(--font-heading)] text-[#FEC324] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
+        <div className="bg-[#4D008C] rounded-sm p-8 md:p-12 text-center">
+          <h3 className="font-[var(--font-heading)] text-[#FFC425] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
             $4 Million Challenge Grant
           </h3>
           <p className="font-[var(--font-body)] text-white/90 text-lg max-w-2xl mx-auto mb-2">
@@ -384,7 +384,7 @@ export default function InteractiveNamingPlan() {
             challenge grant. UMHB must raise an additional $5&nbsp;million in new gifts by the end
             of 2026 to unlock the full challenge.
           </p>
-          <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-lg">
+          <p className="font-[var(--font-heading)] text-[#FFC425] font-bold text-lg">
             Your gift today counts toward the challenge.
           </p>
         </div>

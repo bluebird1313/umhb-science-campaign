@@ -94,10 +94,10 @@ export default function Facility() {
     <section id="facility" className="py-24 md:py-32 bg-[#FAF8F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-[0.15em] uppercase mb-4">
+          <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#4D008C] tracking-[0.15em] uppercase mb-4">
             The Facility
           </h2>
-          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto">
             Three stories of modern labs, collaborative spaces, and faculty offices — designed for the next century of scientific discovery.
           </p>
@@ -134,10 +134,10 @@ export default function Facility() {
           {features.map((feature, i) => (
             <div
               key={i}
-              className="bg-white p-8 rounded-sm shadow-sm hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#3D1A78]"
+              className="bg-white p-8 rounded-sm shadow-sm hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#4D008C]"
             >
-              <div className="text-[#FEC324] mb-4">{feature.icon}</div>
-              <h3 className="font-[var(--font-heading)] text-[#3D1A78] text-lg font-bold tracking-wide uppercase mb-3">
+              <div className="text-[#FFC425] mb-4">{feature.icon}</div>
+              <h3 className="font-[var(--font-heading)] text-[#4D008C] text-lg font-bold tracking-wide uppercase mb-3">
                 {feature.title}
               </h3>
               <p className="font-[var(--font-body)] text-gray-600 text-sm leading-relaxed">

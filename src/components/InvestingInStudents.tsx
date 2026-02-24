@@ -21,7 +21,7 @@ export default function InvestingInStudents() {
 
   return (
     <section ref={sectionRef} className="relative py-24 md:py-32 bg-white overflow-hidden">
-      <MolecularMotif className="absolute bottom-10 left-10 w-40 h-40 text-[#3D1A78]/5 hidden lg:block" />
+      <MolecularMotif className="absolute bottom-10 left-10 w-40 h-40 text-[#4D008C]/5 hidden lg:block" />
 
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -40,7 +40,7 @@ export default function InvestingInStudents() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#FEC324]/10 -z-10 rounded-sm" />
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#FFC425]/10 -z-10 rounded-sm" />
           </div>
 
           {/* Content */}
@@ -49,13 +49,13 @@ export default function InvestingInStudents() {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
             }`}
           >
-            <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#3D1A78] tracking-wide uppercase mb-2">
+            <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-[#4D008C] tracking-wide uppercase mb-2">
               Investing in Students
             </h2>
-            <h3 className="font-[var(--font-heading)] text-xl md:text-2xl text-[#FEC324] tracking-wide uppercase mb-6">
+            <h3 className="font-[var(--font-heading)] text-xl md:text-2xl text-[#FFC425] tracking-wide uppercase mb-6">
               Advancing the Mission
             </h3>
-            <div className="w-12 h-1 bg-[#FEC324] mb-8" />
+            <div className="w-12 h-1 bg-[#FFC425] mb-8" />
 
             <p className="font-[var(--font-body)] text-gray-700 text-lg leading-relaxed mb-6">
               The Science Facility represents a significant investment in the University of Mary Hardin-Baylor&rsquo;s commitment to Christ-centered higher education and academic excellence.

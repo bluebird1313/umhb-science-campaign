@@ -32,7 +32,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 md:py-32 bg-[#3D1A78] overflow-hidden">
+    <section id="contact" className="relative py-24 md:py-32 bg-[#4D008C] overflow-hidden">
       {/* Blueprint watermark */}
       <div className="absolute inset-0 opacity-5">
         <MolecularMotif className="absolute top-20 left-20 w-64 h-64 text-white" />
@@ -45,9 +45,9 @@ export default function Contact() {
           <h2 className="font-[var(--font-heading)] text-3xl md:text-4xl font-bold text-white tracking-[0.15em] uppercase mb-4">
             Join Us in Building
             <br />
-            <span className="text-[#FEC324]">A New Era of Science</span>
+            <span className="text-[#FFC425]">A New Era of Science</span>
           </h2>
-          <div className="w-16 h-1 bg-[#FEC324] mx-auto mb-6" />
+          <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-white/80 text-lg max-w-2xl mx-auto">
             Ready to leave a lasting legacy? Contact UMHB Advancement to learn more about investment opportunities and how your generosity can shape the future of science education.
           </p>
@@ -65,7 +65,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FEC324] transition-colors font-[var(--font-body)]"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FFC425] transition-colors font-[var(--font-body)]"
                   placeholder="Your full name"
                 />
               </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FEC324] transition-colors font-[var(--font-body)]"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FFC425] transition-colors font-[var(--font-body)]"
                   placeholder="your@email.com"
                 />
               </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FEC324] transition-colors font-[var(--font-body)]"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FFC425] transition-colors font-[var(--font-body)]"
                   placeholder="(555) 555-5555"
                 />
               </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                   required
                   value={formData.interest}
                   onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white focus:outline-none focus:border-[#FEC324] transition-colors font-[var(--font-body)] [&>option]:text-gray-900"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white focus:outline-none focus:border-[#FFC425] transition-colors font-[var(--font-body)] [&>option]:text-gray-900"
                 >
                   <option value="">Select your interest</option>
                   <option value="naming">Naming Opportunity</option>
@@ -125,7 +125,7 @@ export default function Contact() {
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FEC324] transition-colors font-[var(--font-body)] resize-none"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FFC425] transition-colors font-[var(--font-body)] resize-none"
                 placeholder="Tell us about your interest in the Science Facility..."
               />
             </div>
@@ -134,14 +134,14 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full sm:w-auto px-10 py-4 bg-[#FEC324] text-white font-[var(--font-heading)] font-bold text-lg tracking-wide uppercase rounded-sm hover:bg-[#FFD75E] hover:text-[#3D1A78] transition-all duration-300 disabled:opacity-50"
+                className="w-full sm:w-auto px-10 py-4 bg-[#FFC425] text-white font-[var(--font-heading)] font-bold text-lg tracking-wide uppercase rounded-sm hover:bg-[#FFD75E] hover:text-[#4D008C] transition-all duration-300 disabled:opacity-50"
               >
                 {submitting ? "Sending..." : "Send Inquiry"}
               </button>
               <a
                 href="/UMHB-Science-Facility-Proposal.pdf"
                 target="_blank"
-                className="text-[#FEC324] font-[var(--font-heading)] text-sm tracking-wide uppercase hover:text-white transition-colors flex items-center gap-2"
+                className="text-[#FFC425] font-[var(--font-heading)] text-sm tracking-wide uppercase hover:text-white transition-colors flex items-center gap-2"
               >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
                   <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -152,7 +152,7 @@ export default function Contact() {
           </form>
         ) : (
           <div className="bg-white/10 backdrop-blur-sm rounded-sm p-12 text-center">
-            <div className="w-16 h-16 bg-[#FEC324] rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-[#FFC425] rounded-full flex items-center justify-center mx-auto mb-6">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" className="w-8 h-8">
                 <path d="M5 13l4 4L19 7" />
               </svg>
@@ -171,7 +171,7 @@ export default function Contact() {
           </p>
           <a
             href="mailto:advancement@umhb.edu"
-            className="font-[var(--font-heading)] text-[#FEC324] text-lg hover:text-white transition-colors"
+            className="font-[var(--font-heading)] text-[#FFC425] text-lg hover:text-white transition-colors"
           >
             advancement@umhb.edu
           </a>
