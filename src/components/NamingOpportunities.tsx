@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 interface NamingItem {
@@ -8,7 +9,6 @@ interface NamingItem {
   floor: number;
   category: "building" | "lab" | "office" | "commons" | "other";
   status: "available" | "reserved" | "named";
-  donor?: string;
 }
 
 const namingData: NamingItem[] = [
@@ -66,31 +66,9 @@ const namingData: NamingItem[] = [
 
 const floorLabels = ["First Floor", "Second Floor", "Third Floor", "Outside"];
 
-const categoryColors: Record<string, string> = {
-  building: "bg-[#3D1A78] text-white",
-  lab: "bg-green-50 border-green-200 text-green-800",
-  office: "bg-pink-50 border-pink-200 text-pink-800",
-  commons: "bg-amber-50 border-amber-200 text-amber-800",
-  other: "bg-gray-50 border-gray-200 text-gray-800",
-};
-
-const categoryLabels: Record<string, string> = {
-  building: "Building",
-  lab: "Laboratory",
-  office: "Office Suite",
-  commons: "Commons / Gathering",
-  other: "Other",
-};
-
-const statusBadge: Record<string, { className: string; label: string }> = {
-  available: { className: "bg-green-100 text-green-800", label: "Available" },
-  reserved: { className: "bg-amber-100 text-amber-800", label: "Funded (Hold)" },
-  named: { className: "bg-[#3D1A78] text-white", label: "Funded" },
-};
-
 export default function NamingOpportunities() {
   const [activeFloor, setActiveFloor] = useState(0);
-  const [selectedItem, setSelectedItem] = useState<NamingItem | null>(null);
+  const [showList, setShowList] = useState(false);
 
   const floorValues = [1, 2, 3, 4];
   const filteredItems = namingData.filter((item) => item.floor === floorValues[activeFloor]);
@@ -120,7 +98,7 @@ export default function NamingOpportunities() {
               key={label}
               onClick={() => {
                 setActiveFloor(i);
-                setSelectedItem(null);
+                setShowList(false);
               }}
               className={`px-5 py-2.5 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase font-semibold transition-all duration-300 rounded-sm ${
                 activeFloor === i
@@ -133,75 +111,101 @@ export default function NamingOpportunities() {
           ))}
         </div>
 
-        {/* Naming cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-          {filteredItems.map((item, i) => {
-            const badge = statusBadge[item.status];
-            return (
-              <button
-                key={`${item.name}-${i}`}
-                onClick={() => setSelectedItem(item)}
-                className={`text-left p-5 rounded-sm border transition-all duration-200 hover:shadow-md ${
-                  item.status === "available"
-                    ? "bg-white border-gray-200 hover:border-[#FEC324]"
-                    : item.status === "reserved"
-                    ? "bg-gray-50 border-gray-200 opacity-75"
-                    : "bg-gray-50 border-gray-200 opacity-60"
-                } ${selectedItem?.name === item.name ? "ring-2 ring-[#FEC324]" : ""}`}
-              >
-                <div className="flex justify-between items-start mb-3">
-                  <span
-                    className={`inline-block px-2 py-0.5 text-xs font-semibold rounded ${
-                      categoryColors[item.category]
-                    }`}
-                  >
-                    {categoryLabels[item.category]}
-                  </span>
-                  <span className={`inline-block px-2 py-0.5 text-xs font-semibold rounded ${badge.className}`}>
-                    {badge.label}
-                  </span>
-                </div>
-                <h3 className="font-[var(--font-heading)] text-[#3D1A78] font-bold text-base mb-1">{item.name}</h3>
-                <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-lg">{item.price}</p>
-                {item.donor && (
-                  <p className="font-[var(--font-body)] text-gray-500 text-sm mt-1 italic">Named by {item.donor}</p>
-                )}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Detail panel */}
-        {selectedItem && (
-          <div className="bg-white rounded-sm shadow-lg p-8 border border-gray-200 max-w-2xl mx-auto">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h3 className="font-[var(--font-heading)] text-[#3D1A78] font-bold text-xl mb-1">{selectedItem.name}</h3>
-                <p className="font-[var(--font-heading)] text-[#FEC324] font-bold text-2xl">{selectedItem.price}</p>
-              </div>
-              <button
-                onClick={() => setSelectedItem(null)}
-                className="text-gray-400 hover:text-gray-600 transition-colors"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6">
-                  <path d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <p className="font-[var(--font-body)] text-gray-600 leading-relaxed mb-6">
-              Your investment in the {selectedItem.name} will create a lasting tribute while advancing science education at UMHB. This space will serve thousands of students for decades to come, equipping them to pursue truth, serve others, and lead with integrity.
-            </p>
-            <a
-              href="mailto:tglaske@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility&body=I%20am%20interested%20in%20the%20naming%20opportunity%20for%20the%20following%20space%3A%0A%0ASpace%3A%20${encodeURIComponent(selectedItem.name)}%0ALevel%3A%20${encodeURIComponent(selectedItem.price)}"
-              className="inline-flex items-center justify-center px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] font-semibold tracking-wide rounded-sm hover:bg-[#2D1259] transition-colors duration-300"
-            >
-              Inquire at tglaske@umhb.edu
-            </a>
+        {/* Floor map image */}
+        {[1, 2, 3].includes(floorValues[activeFloor]) && (
+          <div className="relative w-full rounded-sm overflow-hidden shadow-lg bg-white">
+            <Image
+              src={`/images/naming-floors/floor-${floorValues[activeFloor]}.jpg`}
+              alt={`${floorLabels[activeFloor]} naming opportunity map`}
+              width={1400}
+              height={900}
+              className="w-full h-auto"
+            />
           </div>
         )}
 
+        {/* Toggle button for naming list */}
+        <div className="flex justify-center mt-6 mb-4">
+          <button
+            onClick={() => setShowList(!showList)}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-sm font-[var(--font-heading)] text-[#3D1A78] text-sm tracking-[0.1em] uppercase font-semibold hover:bg-gray-50 hover:border-[#FEC324] transition-all duration-300 shadow-sm"
+          >
+            {showList ? "Hide" : "View"} Naming Opportunities & Amounts
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className={`w-4 h-4 transition-transform duration-300 ${showList ? "rotate-180" : ""}`}
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.168l3.71-3.938a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {/* Collapsible naming list */}
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            showList ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="bg-white rounded-sm shadow-lg border border-gray-200 overflow-hidden mt-2 mb-10">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-[#3D1A78] text-white">
+                  <th className="text-left px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase">Space</th>
+                  <th className="text-right px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase">Amount</th>
+                  <th className="text-right px-6 py-3 font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredItems.map((item, i) => (
+                  <tr
+                    key={`${item.name}-${i}`}
+                    className={`border-b border-gray-100 ${
+                      item.status === "named" ? "bg-gray-50 text-gray-400" : "hover:bg-[#FAF8F5]"
+                    }`}
+                  >
+                    <td className="px-6 py-3">
+                      <span className={`font-[var(--font-body)] text-sm ${item.status === "named" ? "text-gray-400" : "text-gray-800"}`}>
+                        {item.name}
+                      </span>
+                    </td>
+                    <td className="px-6 py-3 text-right">
+                      <span className={`font-[var(--font-heading)] font-bold text-sm ${item.status === "named" ? "text-gray-400" : "text-[#3D1A78]"}`}>
+                        {item.price}
+                      </span>
+                    </td>
+                    <td className="px-6 py-3 text-right">
+                      <span
+                        className={`inline-block px-2.5 py-1 text-xs font-semibold rounded ${
+                          item.status === "available"
+                            ? "bg-green-100 text-green-800"
+                            : "bg-[#3D1A78] text-white"
+                        }`}
+                      >
+                        {item.status === "available" ? "Available" : "Funded"}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 text-center">
+              <a
+                href="mailto:tglaske@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] font-semibold tracking-wide text-sm rounded-sm hover:bg-[#2D1259] transition-colors duration-300"
+              >
+                Inquire at tglaske@umhb.edu
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Challenge grant callout */}
-        <div className="mt-16 bg-[#3D1A78] rounded-sm p-8 md:p-12 text-center">
+        <div className="mt-10 bg-[#3D1A78] rounded-sm p-8 md:p-12 text-center">
           <h3 className="font-[var(--font-heading)] text-[#FEC324] text-xl md:text-2xl font-bold tracking-wide uppercase mb-4">
             $4 Million Challenge Grant
           </h3>
