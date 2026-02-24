@@ -170,10 +170,10 @@ export default function Contact() {
             Or contact UMHB Advancement directly:
           </p>
           <a
-            href="mailto:tglaske@umhb.edu"
+            href="mailto:advancement@umhb.edu"
             className="font-[var(--font-heading)] text-[#FEC324] text-lg hover:text-white transition-colors"
           >
-            tglaske@umhb.edu
+            advancement@umhb.edu
           </a>
         </div>
       </div>
