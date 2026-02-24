@@ -12,47 +12,59 @@ interface NamingItem {
 }
 
 const namingData: NamingItem[] = [
-  // Building-level
-  { name: "Science Facility (Building)", price: "$10,000,000+", floor: 0, category: "building", status: "available" },
-  { name: "First Floor Wing", price: "$3,000,000", floor: 1, category: "building", status: "available" },
-  { name: "Second Floor Wing", price: "$3,000,000", floor: 2, category: "building", status: "available" },
-  { name: "Third Floor Wing", price: "$3,000,000", floor: 3, category: "building", status: "available" },
+  // $1,000,000 Tier
+  { name: "Lobby", price: "$1,000,000", floor: 1, category: "commons", status: "reserved" },
 
-  // First Floor
-  { name: "Lobby & Student Gathering Space", price: "$1,500,000", floor: 1, category: "commons", status: "available" },
-  { name: "Conference Room", price: "$250,000", floor: 1, category: "commons", status: "available" },
-  { name: "Teaching Lab 101", price: "$500,000", floor: 1, category: "lab", status: "available" },
-  { name: "Teaching Lab 102", price: "$500,000", floor: 1, category: "lab", status: "available" },
-  { name: "Teaching Lab 103", price: "$500,000", floor: 1, category: "lab", status: "available" },
-  { name: "Teaching Lab 104", price: "$500,000", floor: 1, category: "lab", status: "available" },
-  { name: "Student Commons (First Floor)", price: "$300,000", floor: 1, category: "commons", status: "available" },
-  { name: "Faculty Office Suite A", price: "$100,000", floor: 1, category: "office", status: "available" },
-  { name: "Faculty Office Suite B", price: "$100,000", floor: 1, category: "office", status: "available" },
+  // $500,000 Tier
+  { name: "Study Room - W1", price: "$500,000", floor: 1, category: "commons", status: "available" },
+  { name: "Study Room - W2", price: "$500,000", floor: 1, category: "commons", status: "available" },
+  { name: "Study Room - E1", price: "$500,000", floor: 1, category: "commons", status: "named" },
+  { name: "Office Suites - East", price: "$500,000", floor: 1, category: "office", status: "named" },
+  { name: "North Entrance Plaza", price: "$500,000", floor: 4, category: "other", status: "available" },
+  { name: "Research Center", price: "$500,000", floor: 3, category: "lab", status: "named" },
 
-  // Second Floor
-  { name: "Microbiology Prep Room", price: "$350,000", floor: 2, category: "lab", status: "available" },
-  { name: "Teaching Lab 201", price: "$500,000", floor: 2, category: "lab", status: "available" },
-  { name: "Teaching Lab 202", price: "$500,000", floor: 2, category: "lab", status: "available" },
-  { name: "Teaching Lab 203", price: "$500,000", floor: 2, category: "lab", status: "available" },
-  { name: "Teaching Lab 204", price: "$500,000", floor: 2, category: "lab", status: "available" },
-  { name: "Research Methods Lab", price: "$400,000", floor: 2, category: "lab", status: "available" },
-  { name: "Memorial Hall", price: "$750,000", floor: 2, category: "commons", status: "available" },
-  { name: "Second Floor Commons", price: "$250,000", floor: 2, category: "commons", status: "available" },
-  { name: "Faculty Office Suite C", price: "$100,000", floor: 2, category: "office", status: "available" },
+  // $150,000 Tier
+  { name: "Conference Room", price: "$150,000", floor: 1, category: "commons", status: "available" },
+  { name: "General Biology Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
+  { name: "Microbiology Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
+  { name: "Genetics Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
+  { name: "Neuroscience Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
+  { name: "Biochemistry Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
+  { name: "Research Methods Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
+  { name: "General Chemistry Lab 1", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "General Chemistry Lab 2", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "Analytical Physical Forensics Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "Organic Chemistry Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "Instrument Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
 
-  // Third Floor
-  { name: "General Chemistry Lab A", price: "$500,000", floor: 3, category: "lab", status: "available" },
-  { name: "General Chemistry Lab B", price: "$500,000", floor: 3, category: "lab", status: "available" },
-  { name: "Organic Chemistry Lab", price: "$500,000", floor: 3, category: "lab", status: "available" },
-  { name: "Physical Chemistry Lab", price: "$500,000", floor: 3, category: "lab", status: "available" },
-  { name: "Analytical/Physical College Chemistry", price: "$500,000", floor: 3, category: "lab", status: "available" },
-  { name: "Biology Research Lab", price: "$750,000", floor: 3, category: "lab", status: "available" },
-  { name: "Chemistry Research Lab", price: "$750,000", floor: 3, category: "lab", status: "available" },
-  { name: "Instrument Lab", price: "$400,000", floor: 3, category: "lab", status: "available" },
-  { name: "Third Floor Commons", price: "$250,000", floor: 3, category: "commons", status: "available" },
+  // $100,000 Tier
+  { name: "Stairway", price: "$100,000", floor: 1, category: "other", status: "available" },
+  { name: "South Entrance Plaza", price: "$100,000", floor: 4, category: "other", status: "available" },
+  { name: "Gazebo", price: "$100,000", floor: 4, category: "other", status: "available" },
+
+  // $50,000 Tier
+  { name: "Office Suite - W1", price: "$50,000", floor: 1, category: "office", status: "available" },
+  { name: "Office Suite - W2", price: "$50,000", floor: 1, category: "office", status: "available" },
+  { name: "Office Suite - E1", price: "$50,000", floor: 1, category: "office", status: "available" },
+  { name: "Office Suite - E2", price: "$50,000", floor: 1, category: "office", status: "available" },
+  { name: "Office Suite - E3", price: "$50,000", floor: 1, category: "office", status: "available" },
+  { name: "Office Suite - E4", price: "$50,000", floor: 1, category: "office", status: "available" },
+
+  // $25,000 Tier
+  { name: "Office - W1", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W2", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W3", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W4", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W5", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W6", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W7", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W8", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W9", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W10", price: "$25,000", floor: 1, category: "office", status: "available" },
+  { name: "Office - W11", price: "$25,000", floor: 1, category: "office", status: "available" },
 ];
 
-const floorLabels = ["Building-Wide", "First Floor", "Second Floor", "Third Floor"];
+const floorLabels = ["First Floor", "Second Floor", "Third Floor", "Outside"];
 
 const categoryColors: Record<string, string> = {
   building: "bg-[#3D1A78] text-white",
@@ -72,18 +84,16 @@ const categoryLabels: Record<string, string> = {
 
 const statusBadge: Record<string, { className: string; label: string }> = {
   available: { className: "bg-green-100 text-green-800", label: "Available" },
-  reserved: { className: "bg-amber-100 text-amber-800", label: "Reserved" },
-  named: { className: "bg-[#3D1A78] text-white", label: "Named" },
+  reserved: { className: "bg-amber-100 text-amber-800", label: "Funded (Hold)" },
+  named: { className: "bg-[#3D1A78] text-white", label: "Funded" },
 };
 
 export default function NamingOpportunities() {
   const [activeFloor, setActiveFloor] = useState(0);
   const [selectedItem, setSelectedItem] = useState<NamingItem | null>(null);
 
-  const filteredItems =
-    activeFloor === 0
-      ? namingData.filter((item) => item.category === "building")
-      : namingData.filter((item) => item.floor === activeFloor && item.category !== "building");
+  const floorValues = [1, 2, 3, 4];
+  const filteredItems = namingData.filter((item) => item.floor === floorValues[activeFloor]);
 
   const availableCount = namingData.filter((item) => item.status === "available").length;
 

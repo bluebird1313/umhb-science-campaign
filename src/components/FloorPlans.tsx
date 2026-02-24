@@ -12,8 +12,8 @@ const floors = [
       "Lobby & Student Gathering Space",
       "Conference Room",
       "Faculty & Staff Offices",
-      "Teaching Labs",
-      "Student Commons",
+      "North & South Entry Plaza",
+      "Maintenance",
     ],
   },
   {
@@ -46,7 +46,7 @@ const legend = [
   { color: "#F4C2C2", label: "Offices" },
   { color: "#B5D8B5", label: "Labs" },
   { color: "#F5E6A3", label: "Commons / Corridors" },
-  { color: "#C4C4C4", label: "Service / Utility" },
+  { color: "#C4C4C4", label: "Maintenance" },
 ];
 
 export default function FloorPlans() {
