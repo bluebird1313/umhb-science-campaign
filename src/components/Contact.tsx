@@ -23,7 +23,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterest Level: ${formData.interest}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:advancement@umhb.edu?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:tglaske@umhb.edu?subject=${subject}&body=${body}`;
 
     setTimeout(() => {
       setSubmitted(true);
@@ -170,10 +170,10 @@ export default function Contact() {
             Or contact UMHB Advancement directly:
           </p>
           <a
-            href="mailto:advancement@umhb.edu"
+            href="mailto:tglaske@umhb.edu"
             className="font-[var(--font-heading)] text-[#FEC324] text-lg hover:text-white transition-colors"
           >
-            advancement@umhb.edu
+            tglaske@umhb.edu
           </a>
         </div>
       </div>

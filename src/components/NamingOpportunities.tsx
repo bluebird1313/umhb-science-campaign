@@ -192,10 +192,10 @@ export default function NamingOpportunities() {
               Your investment in the {selectedItem.name} will create a lasting tribute while advancing science education at UMHB. This space will serve thousands of students for decades to come, equipping them to pursue truth, serve others, and lead with integrity.
             </p>
             <a
-              href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility&body=I%20am%20interested%20in%20the%20naming%20opportunity%20for%20the%20following%20space%3A%0A%0ASpace%3A%20${encodeURIComponent(selectedItem.name)}%0ALevel%3A%20${encodeURIComponent(selectedItem.price)}"
+              href="mailto:tglaske@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility&body=I%20am%20interested%20in%20the%20naming%20opportunity%20for%20the%20following%20space%3A%0A%0ASpace%3A%20${encodeURIComponent(selectedItem.name)}%0ALevel%3A%20${encodeURIComponent(selectedItem.price)}"
               className="inline-flex items-center justify-center px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] font-semibold tracking-wide rounded-sm hover:bg-[#2D1259] transition-colors duration-300"
             >
-              Inquire at advancement@umhb.edu
+              Inquire at tglaske@umhb.edu
             </a>
           </div>
         )}
