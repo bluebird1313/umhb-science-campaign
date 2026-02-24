@@ -34,7 +34,7 @@ export default function InvestingInStudents() {
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
               <Image
                 src="/images/renderings/lobby-04.jpg"
-                alt="Students collaborating in the science facility lobby"
+                alt="Students collaborating in the science lab lobby"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -58,7 +58,7 @@ export default function InvestingInStudents() {
             <div className="w-12 h-1 bg-[#FFC425] mb-8" />
 
             <p className="font-[var(--font-body)] text-gray-700 text-lg leading-relaxed mb-6">
-              The Science Facility represents a significant investment in the University of Mary Hardin-Baylor&rsquo;s commitment to Christ-centered higher education and academic excellence.
+              The Science Lab represents a significant investment in the University of Mary Hardin-Baylor&rsquo;s commitment to Christ-centered higher education and academic excellence.
             </p>
             <p className="font-[var(--font-body)] text-gray-700 text-lg leading-relaxed mb-6">
               Designed to support innovative teaching, undergraduate research, and interdisciplinary collaboration, the facility brings together laboratories, research spaces, faculty offices, and student gathering areas to create an environment where learning and mentorship thrive.

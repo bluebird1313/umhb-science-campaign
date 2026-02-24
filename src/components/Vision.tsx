@@ -51,7 +51,7 @@ export default function Vision() {
               At UMHB, we believe the pursuit of scientific knowledge is an act of stewardship&mdash;an opportunity to better understand and care for the world God has entrusted to us. Yet to prepare students for today&rsquo;s challenges, we know they need more than classrooms and labs; they need environments where collaboration, discovery, and mentorship can thrive together.
             </p>
             <p className="font-[var(--font-body)] text-gray-700 text-lg leading-relaxed mb-6">
-              Because of faithful partners like you, we have the opportunity to create a new science facility that brings students and faculty from across the natural sciences into one shared space to study, teach, and innovate side by side.
+              Because of faithful partners like you, we have the opportunity to create a new science lab that brings students and faculty from across the natural sciences into one shared space to study, teach, and innovate side by side.
             </p>
             <p className="font-[var(--font-body)] text-gray-700 text-lg leading-relaxed">
               Your generosity makes this vision possible. By helping create this new home for science at UMHB, you are opening doors for students to discover their calling, pursue breakthrough ideas, and gain a fuller understanding of the interconnected world they are preparing to serve.
@@ -66,7 +66,7 @@ export default function Vision() {
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden shadow-2xl">
               <Image
                 src="/images/renderings/lobby-01.jpg"
-                alt="Science facility lobby rendering — students gathering in modern atrium"
+                alt="Science lab lobby rendering — students gathering in modern atrium"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

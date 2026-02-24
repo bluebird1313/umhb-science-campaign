@@ -27,7 +27,7 @@ export default function Hero() {
       <div ref={imageRef} className="absolute inset-0 scale-110">
         <Image
           src="/images/renderings/east-corner.jpg"
-          alt="UMHB Science Facility rendering — east corner view"
+          alt="UMHB Science Lab rendering — east corner view"
           fill
           priority
           className="object-cover"
@@ -60,7 +60,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="font-[var(--font-body)] text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-4">
-          A 56,000 square foot, three-story science facility designed to inspire the next generation of scientists, researchers, and leaders.
+          A 56,000 square foot, three-story science lab designed to inspire the next generation of scientists, researchers, and leaders.
         </p>
 
         {/* Gold accent line */}

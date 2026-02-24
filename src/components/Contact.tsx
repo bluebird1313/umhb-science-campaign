@@ -19,7 +19,7 @@ export default function Contact() {
     setSubmitting(true);
 
     // Send email via mailto as a fallback — in production this would hit an API
-    const subject = encodeURIComponent("Science Facility Inquiry");
+    const subject = encodeURIComponent("Science Lab Inquiry");
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterest Level: ${formData.interest}\n\nMessage:\n${formData.message}`
     );
@@ -126,7 +126,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-[#FFC425] transition-colors font-[var(--font-body)] resize-none"
-                placeholder="Tell us about your interest in the Science Facility..."
+                placeholder="Tell us about your interest in the Science Lab..."
               />
             </div>
 

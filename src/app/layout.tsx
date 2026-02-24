@@ -21,13 +21,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "A New Era of Science | UMHB Science Facility",
+  title: "A New Era of Science | UMHB Science Lab",
   description:
-    "University of Mary Hardin-Baylor is building a new 56,000 sq ft, three-story science facility. Explore the vision and discover naming opportunities.",
+    "University of Mary Hardin-Baylor is building a new 56,000 sq ft, three-story science lab. Explore the vision and discover naming opportunities.",
   openGraph: {
     title: "A New Era of Science | UMHB",
     description:
-      "A new 56,000 sq ft science facility for the University of Mary Hardin-Baylor. Opening January 2028.",
+      "A new 56,000 sq ft science lab for the University of Mary Hardin-Baylor. Opening January 2028.",
     images: ["/images/renderings/east-corner.jpg"],
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "A New Era of Science | UMHB",
     description:
-      "A new 56,000 sq ft science facility for UMHB. Opening January 2028.",
+      "A new 56,000 sq ft science lab for UMHB. Opening January 2028.",
     images: ["/images/renderings/east-corner.jpg"],
   },
 };

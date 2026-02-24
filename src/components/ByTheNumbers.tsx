@@ -75,7 +75,7 @@ export default function ByTheNumbers() {
           Meeting the Growing Demand
         </h2>
         <p className="font-[var(--font-body)] text-center text-white/70 text-lg max-w-2xl mx-auto mb-16">
-          From around 1,000 students in the 1920&rsquo;s to almost 3,300 today, UMHB&rsquo;s growth demands a science facility worthy of its mission.
+          From around 1,000 students in the 1920&rsquo;s to almost 3,300 today, UMHB&rsquo;s growth demands a science lab worthy of its mission.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 lg:gap-10">

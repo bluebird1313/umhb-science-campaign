@@ -170,7 +170,7 @@ export default function InteractiveNamingPlan() {
           </h2>
           <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto mb-4">
-            Leave a lasting legacy by naming a space in the new Science Facility.
+            Leave a lasting legacy by naming a space in the new Science Lab.
             Hover over any room to explore giving levels.
           </p>
           <p className="font-[var(--font-heading)] text-[#4D008C] text-lg font-semibold">

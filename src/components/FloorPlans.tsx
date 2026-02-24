@@ -99,7 +99,7 @@ export default function FloorPlans() {
             <div className="relative aspect-[16/9]">
               <Image
                 src={floors[activeFloor].image}
-                alt={`${floors[activeFloor].label} plan of UMHB Science Facility`}
+                alt={`${floors[activeFloor].label} plan of UMHB Science Lab`}
                 fill
                 className="object-contain"
                 sizes="(max-width: 1200px) 100vw, 1200px"

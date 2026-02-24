@@ -87,7 +87,7 @@ export default function NamingOpportunities() {
           </h2>
           <div className="w-16 h-1 bg-[#FFC425] mx-auto mb-6" />
           <p className="font-[var(--font-body)] text-gray-600 text-lg max-w-2xl mx-auto mb-4">
-            Leave a lasting legacy by naming a space in the new Science Facility. Every investment advances faith-based science education for generations to come.
+            Leave a lasting legacy by naming a space in the new Science Lab. Every investment advances faith-based science education for generations to come.
           </p>
           <p className="font-[var(--font-heading)] text-[#4D008C] text-lg font-semibold">
             {availableCount} of {namingData.length} opportunities remaining
@@ -130,7 +130,7 @@ export default function NamingOpportunities() {
         {/* Action buttons below floor map */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mt-6 mb-4">
           <a
-            href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
+            href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Lab"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#4D008C] text-white font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase font-semibold rounded-sm hover:bg-[#3B0068] transition-colors duration-300 shadow-sm"
           >
             Inquire at advancement@umhb.edu

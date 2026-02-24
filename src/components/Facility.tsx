@@ -49,7 +49,7 @@ const features = [
 const galleryImages = [
   {
     src: "/images/renderings/north-east-corner.jpg",
-    alt: "Northeast corner view of UMHB Science Facility",
+    alt: "Northeast corner view of UMHB Science Lab",
     caption: "Northeast Corner",
   },
   {
