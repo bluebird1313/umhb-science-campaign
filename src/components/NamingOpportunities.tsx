@@ -127,13 +127,19 @@ export default function NamingOpportunities() {
           </div>
         )}
 
-        {/* Toggle button for naming list */}
-        <div className="flex justify-center mt-6 mb-4">
+        {/* Action buttons below floor map */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mt-6 mb-4">
+          <a
+            href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] text-sm tracking-[0.1em] uppercase font-semibold rounded-sm hover:bg-[#2D1259] transition-colors duration-300 shadow-sm"
+          >
+            Inquire at advancement@umhb.edu
+          </a>
           <button
             onClick={() => setShowList(!showList)}
             className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-sm font-[var(--font-heading)] text-[#3D1A78] text-sm tracking-[0.1em] uppercase font-semibold hover:bg-gray-50 hover:border-[#FEC324] transition-all duration-300 shadow-sm"
           >
-            {showList ? "Hide" : "View"} Naming Opportunities & Amounts
+            {showList ? "Hide" : "View"} Naming Opportunities
             <svg
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -196,14 +202,6 @@ export default function NamingOpportunities() {
                 ))}
               </tbody>
             </table>
-            <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 text-center">
-              <a
-                href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
-                className="inline-flex items-center justify-center px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] font-semibold tracking-wide text-sm rounded-sm hover:bg-[#2D1259] transition-colors duration-300"
-              >
-                Inquire at advancement@umhb.edu
-              </a>
-            </div>
           </div>
         </div>
 
