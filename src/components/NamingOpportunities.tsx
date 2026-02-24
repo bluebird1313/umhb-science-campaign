@@ -13,7 +13,7 @@ interface NamingItem {
 
 const namingData: NamingItem[] = [
   // $1,000,000 Tier
-  { name: "Lobby", price: "$1,000,000", floor: 1, category: "commons", status: "reserved" },
+  { name: "Lobby", price: "$1,000,000", floor: 1, category: "commons", status: "named" },
 
   // $500,000 Tier
   { name: "Study Room - W1", price: "$500,000", floor: 1, category: "commons", status: "available" },
