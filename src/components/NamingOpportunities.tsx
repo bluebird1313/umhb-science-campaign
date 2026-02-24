@@ -31,9 +31,12 @@ const namingData: NamingItem[] = [
   { name: "Neuroscience Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
   { name: "Biochemistry Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
   { name: "Research Methods Lab", price: "$150,000", floor: 2, category: "lab", status: "available" },
-  { name: "General Chemistry Lab 1", price: "$150,000", floor: 3, category: "lab", status: "available" },
-  { name: "General Chemistry Lab 2", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "General Chemistry Lab W1", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "General Chemistry Lab W2", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "Physical Chemistry Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
   { name: "Analytical Physical Forensics Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "Biology Research Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
+  { name: "Chemistry Research Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
   { name: "Organic Chemistry Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
   { name: "Instrument Lab", price: "$150,000", floor: 3, category: "lab", status: "available" },
 
@@ -195,10 +198,10 @@ export default function NamingOpportunities() {
             </table>
             <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 text-center">
               <a
-                href="mailto:tglaske@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
+                href="mailto:advancement@umhb.edu?subject=Naming%20Inquiry%20-%20UMHB%20Science%20Facility"
                 className="inline-flex items-center justify-center px-6 py-3 bg-[#3D1A78] text-white font-[var(--font-heading)] font-semibold tracking-wide text-sm rounded-sm hover:bg-[#2D1259] transition-colors duration-300"
               >
-                Inquire at tglaske@umhb.edu
+                Inquire at advancement@umhb.edu
               </a>
             </div>
           </div>
