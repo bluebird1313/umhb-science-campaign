@@ -16,9 +16,11 @@ export default function StickyCTA() {
 
   return (
     <a
-      href="#naming"
+      href="https://advance.umhb.edu/g/giving"
+      target="_blank"
+      rel="noopener noreferrer"
       className={`sticky-cta ${visible ? "visible" : ""}`}
-      aria-label="View naming opportunities"
+      aria-label="Make your investment"
     >
       <span className="flex items-center gap-2 px-6 py-3 bg-[#FEC324] text-white font-[var(--font-heading)] font-bold text-sm tracking-wider uppercase rounded-sm shadow-lg hover:bg-[#3D1A78] transition-colors duration-300">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
