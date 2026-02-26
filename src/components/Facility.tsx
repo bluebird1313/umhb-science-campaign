@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 const features = [
   {
-    title: "Twelve Teaching Labs",
+    title: "Fourteen Teaching Labs",
     description:
       "Modern, inquiry-based learning environments equipped with flexible workstations, smart technology, and real-time data collection tools.",
     icon: (
