@@ -82,7 +82,7 @@ export default function ByTheNumbers() {
           <AnimatedStat end={3300} label="Students" prefix="~" />
           <AnimatedStat end={90} suffix="+" label="Science Courses" />
           <AnimatedStat end={56000} label="Square Feet" suffix="" />
-          <AnimatedStat end={13} label="Teaching & Research Labs" />
+          <AnimatedStat end={14} label="Teaching & Research Labs" />
           <AnimatedStat end={3} label="Stories" />
         </div>
       </div>
