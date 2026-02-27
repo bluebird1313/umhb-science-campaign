@@ -139,7 +139,7 @@ export default function Contact() {
                 {submitting ? "Sending..." : "Send Inquiry"}
               </button>
               <a
-                href="/UMHB-Science-Facility-Proposal.pdf"
+                href="/Digitalfile_UMHB_ScienceFacility_Proposal2026.pdf"
                 target="_blank"
                 className="text-[#FFC425] font-[var(--font-heading)] text-sm tracking-wide uppercase hover:text-white transition-colors flex items-center gap-2"
               >
